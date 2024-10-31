@@ -1,6 +1,7 @@
 # Simple Text Editor 📝
 
 A lightweight WordPad-like text editor for basic document creation and editing.
+![image](https://github.com/user-attachments/assets/a10b87ba-028c-4617-b213-35987ac9a504)
 
 ## Features 🌟
 * Clean and intuitive user interface
