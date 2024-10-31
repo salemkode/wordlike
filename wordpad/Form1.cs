@@ -3,7 +3,7 @@ using System.Drawing.Text;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
-namespace apple_note
+namespace wordpad
 {
     public partial class Form1 : Form
     {

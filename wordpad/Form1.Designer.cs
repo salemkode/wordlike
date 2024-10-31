@@ -1,4 +1,4 @@
-﻿namespace apple_note
+﻿namespace wordpad
 {
     partial class Form1
     {

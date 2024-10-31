@@ -1,4 +1,4 @@
-namespace apple_note
+namespace wordpad
 {
     internal static class Program
     {
