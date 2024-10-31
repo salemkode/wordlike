@@ -121,7 +121,6 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(719, 41);
             panel2.TabIndex = 0;
-            panel2.Paint += panel2_Paint;
             // 
             // panel3
             // 
@@ -147,6 +146,7 @@
             strikeThroughBtn.SizeMode = PictureBoxSizeMode.Zoom;
             strikeThroughBtn.TabIndex = 15;
             strikeThroughBtn.TabStop = false;
+            strikeThroughBtn.Click += strikeThroughBtn_Click;
             // 
             // boldBtn
             // 
@@ -159,6 +159,7 @@
             boldBtn.Size = new Size(25, 23);
             boldBtn.TabIndex = 13;
             boldBtn.TabStop = false;
+            boldBtn.Click += boldBtn_Click;
             // 
             // underlineBtn
             // 
@@ -172,6 +173,7 @@
             underlineBtn.SizeMode = PictureBoxSizeMode.Zoom;
             underlineBtn.TabIndex = 14;
             underlineBtn.TabStop = false;
+            underlineBtn.Click += underlineBtn_Click;
             // 
             // italicBtn
             // 
@@ -185,6 +187,7 @@
             italicBtn.SizeMode = PictureBoxSizeMode.Zoom;
             italicBtn.TabIndex = 12;
             italicBtn.TabStop = false;
+            italicBtn.Click += italicBtn_Click;
             // 
             // alignCenterBtn
             // 

@@ -223,11 +223,6 @@ namespace wordpad
             richTextBox1.Select(startIndex, length);
         }
 
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void alignLeftBtn_Click(object sender, EventArgs e)
         {
             richTextBox1.SelectionAlignment = HorizontalAlignment.Left;
@@ -250,22 +245,25 @@ namespace wordpad
             int startIndex = richTextBox1.SelectionStart;
             int length = richTextBox1.SelectionLength;
 
-            // Apply the new font to each character in the selection
-            for (int i = startIndex; i < startIndex + length; i++)
+            // Check if any text is selected
+            if (length > 0 && richTextBox1.SelectionFont != null)
             {
-                richTextBox1.Select(i, 1);
-                if (richTextBox1.SelectionFont != null) // Check if the current selection has a font
-                {
-                    // Change font only, keep existing size and style
-                    Font newFont = new Font(
-                        richTextBox1.SelectionFont.Name.ToString(),
-                        richTextBox1.SelectionFont.Size,
-                        Fstyle
-                    );
-                    richTextBox1.SelectionFont = newFont;
-                }
+                // Get the current font style for the selection
+                // Determine if the current selection already has the target style
+                bool hasStyle = (richTextBox1.SelectionFont.Style & Fstyle) == Fstyle;
+
+                // Calculate the new style by adding or removing the specified style
+                FontStyle newStyle = hasStyle
+                    ? richTextBox1.SelectionFont.Style & ~Fstyle // Remove the style
+                    : richTextBox1.SelectionFont.Style | Fstyle;
+
+                // Apply the new font with the modified style to the selection
+                richTextBox1.SelectionFont = new Font(
+                    richTextBox1.SelectionFont.Name,
+                    richTextBox1.SelectionFont.Size,
+                    newStyle
+                );
             }
-            richTextBox1.Select(startIndex, length);
         }
 
         private void strikeThroughBtn_Click(object sender, EventArgs e)
