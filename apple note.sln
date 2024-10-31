@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "apple note", "apple note\apple note.csproj", "{3CA49592-199B-4EA4-8D36-ACAE2483DC52}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3CA49592-199B-4EA4-8D36-ACAE2483DC52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CA49592-199B-4EA4-8D36-ACAE2483DC52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CA49592-199B-4EA4-8D36-ACAE2483DC52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CA49592-199B-4EA4-8D36-ACAE2483DC52}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3923C686-9CEF-4388-B616-5052CF5E66BF}
+	EndGlobalSection
+EndGlobal
